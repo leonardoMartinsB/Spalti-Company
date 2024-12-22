@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Spalti Company | Nossa Equipe</title>
+</head>
+
+<body>
+  <header class="header" data-header style="z-index: 7;"> 
+    <div class="container">
+      <a href="index.html" class="logo">Spalti</a>
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="index.html" class="logo">Spalti</a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link" data-nav-link>Início</a></li>
+          <li><a href="equipe.html" class="navbar-link" data-nav-link>Equipe</a></li>
+          <li><a href="termos_uso.html" class="navbar-link" data-nav-link>Termos de Uso</a></li>
+          <li><a href="politica_privacidade.html" class="navbar-link" data-nav-link>Política de Privacidade</a></li>
+        </ul>
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+      <a href="#" class="btn-outline">Entre em Contato</a>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <section class="team-section">
+    <div class="container">
+      <h2 class="section-title">Nossa Equipe de Especialistas</h2>
+      <p class="section-subtitle">Conheça os profissionais que fazem a diferença na <strong>Spalti Company</strong>.</p>
+      <div class="team-wrapper">
+        <div class="team-member">
+          <div class="team-img-container">
+            <img src="assets/images/leozin.jpg" alt="Ana Silva" class="team-img">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Ana Silva</h3>
+            <p class="team-role">CEO & Fundadora</p>
+            <p class="team-description">Ana é apaixonada por inovação e lidera a Spalti com visão e experiência em soluções tecnológicas.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-img-container">
+            <img src="assets/images/leozin.jpg" alt="Carlos Mendes" class="team-img">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Carlos Mendes</h3>
+            <p class="team-role">CTO</p>
+            <p class="team-description">Responsável pela arquitetura de sistemas e automação, Carlos traz mais de 15 anos de experiência no mercado.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-img-container">
+            <img src="assets/images/leozin.jpg" alt="Mariana Costa" class="team-img">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Mariana Costa</h3>
+            <p class="team-role">Gerente de Projetos</p>
+            <p class="team-description">Mariana é especializada em metodologias ágeis e entrega de projetos de alto impacto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 9999;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      padding-top: 100px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-list {
+      display: flex;
+      gap: 40px;
+    }
+
+    .navbar-link {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #000;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-open-btn,
+    .nav-close-btn {
+      display: none; 
+    }
+
+    .overlay {
+      display: none;
+    }
+
+    .team-section {
+      text-align: center;
+      margin-bottom: 5vh;
+      margin-top: -5vh;
+    }
+
+    .section-title {
+      font-size: 5rem;
+      font-weight: 700;
+      color: #000000;
+      margin-top: 45px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .section-subtitle {
+      font-size: 1.5rem;
+      color: #00A846;
+      margin-bottom: 50px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .team-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .team-member {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      max-width: 300px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-img-container {
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+    }
+
+    .team-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-content {
+      padding: 20px;
+    }
+
+    .team-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+
+    .team-role {
+      font-size: 1.5rem;
+      color: #27ae60;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .team-description {
+      font-size: 1.2rem;
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2.5rem;
+      }
+      .team-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .team-member {
+        width: 90%;
+      }
+    }
+  </style>
+
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">Spalti</a>
+          <p class="footer-text">Transformamos negócios com soluções tecnológicas de alta qualidade, inovação e resultados comprovados.</p>
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Digite seu email" required class="email-field">
+            <button type="submit" class="form-btn">
+              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+        </div>
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Nossos Serviços</p></li>
+          <li><a href="contato.html" class="footer-link">Desenvolvimento de Sistemas</a></li>
+          <li><a href="contato.html" class="footer-link">Automação de Processos</a></li>
+          <li><a href="contato.html" class="footer-link">Consultoria Tecnológica</a></li>
+          <li><a href="contato.html" class="footer-link">Soluções Personalizadas</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Empresa</p></li>
+          <li><a href="equipe.html" class="footer-link">Sobre a Spalti</a></li>
+          <li><a href="equipe.html" class="footer-link">Nossa Equipe</a></li>
+          <li><a href="#projetos" class="footer-link">Projetos Realizados</a></li>
+          <li><a href="contato.html" class="footer-link">Contato</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Fale Conosco</p></li>
+          <li class="footer-item">
+            <ion-icon name="location" aria-hidden="true"></ion-icon>
+            <address class="contact-link address">Avenida Professora Izoraida Marques Peres, Sorocaba, SP, Brasil</address>
+          </li>
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+            <a href="tell: +551597747226" class="contact-link">+55 (15) 99774-7226</a>
+          </li>
+          <li class="footer-item">
+            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            <a href="mailto:spalticompany@gmail.com" class="contact-link">spalticompany@gmail.com</a>
+          </li>
+          <li class="footer-item">
+            <ul class="social-list">
+              <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">&copy; 2024 Spalti | Todos os Direitos Reservados</p>
+        <ul class="footer-bottom-list">
+          <li><a href="politica_privacidade.html" class="footer-bottom-link">Política de Privacidade</a></li>
+          <li><a href="termos_uso.html" class="footer-bottom-link">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

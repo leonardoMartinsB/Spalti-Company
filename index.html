@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Spalti Company</title>
+  </head>
+  <body>
+
+    <div id="splash" class="splash-screen" style="overflow: hidden;">
+      <div class="splash-content">
+        <div class="logo" style=" font-family: 'Dancing Script', cursive;">Spalti</div>
+        <p class="subtext">Preparando algo especial para você...</p>
+      </div>
+    </div>
+    
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Spalti</a>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Spalti</a>
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Início</a>
+            </li>
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>Sobre Nós</a>
+            </li>
+            <li>
+              <a href="#services" class="navbar-link" data-nav-link>Serviços</a>
+            </li>
+            <li>
+              <a href="#projetos" class="navbar-link" data-nav-link>Projetos</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <a href="#" class="btn-outline">Entre em Contato</a>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle has-before">Bem-vindo à Spalti</p>
+              <h1 class="h1 hero-title">Soluções Inteligentes Para Seu Negócio</h1>
+              <p class="hero-text">
+                Na Spalti, transformamos desafios em oportunidades. Nossas soluções personalizadas unem design inovador, desempenho robusto e automação inteligente para impulsionar o sucesso do seu negócio.
+              </p>              
+              <div class="btn-group">
+                <a href="#about" class="btn btn-primary">Saiba Mais</a>
+                <button class="flex-btn">
+                  <div class="btn-icon">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span class="span">Como Trabalhamos</span>
+                </button>
+              </div>
+            </div>
+            <figure class="hero-banner has-before img-holder" style="--width: 650; --height: 650;">
+              <img src="./assets/images/hero-banner.png" width="650" height="650" alt="Spalti - Soluções Inteligentes" class="img-cover">
+            </figure>
+          </div>
+        </section>
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure class="about-banner">
+              <img src="./assets/images/about-banner.png" width="802" height="654" loading="lazy" alt="Sobre a Spalti" class="w-100">
+            </figure>
+            <div class="about-content">
+              <h2 class="h2-sm section-title">Inovação e Qualidade para o Sucesso do Seu Negócio</h2>
+              <p class="section-text">
+                Fundada em 01 de fevereiro de 2023, na cidade de Sorocaba, a Spalti é especializada na criação de softwares, websites e sistemas de automação personalizados para alavancar o seu negócio.
+              </p>
+              <ul class="about-list">
+                <li class="has-before">
+                  Desenvolvimento de softwares sob medida para diferentes setores.
+                </li>
+                <li class="has-before">
+                  Criação de websites otimizados e responsivos.
+                </li>
+                <li class="has-before">
+                  Soluções de automação para aumentar a produtividade.
+                </li>
+                <li class="has-before">
+                  Suporte técnico contínuo para garantir eficiência.
+                </li>
+              </ul>
+              <div class="btn-group">
+                <a href="#services" class="btn btn-primary">Conheça Nossos Serviços</a>
+                <button class="flex-btn">
+                  <div class="btn-icon">
+                    <ion-icon name="medal-outline" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span class="span">Inovando desde 2023</span>
+                  <div class="btn-icon">
+                    <ion-icon name="rocket-outline" aria-hidden="true"></ion-icon>
+                  </div>
+                  <span class="span">Tecnologia que transforma</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section service" id="services" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle text-center">-O Que Oferecemos-</p>
+            <h2 class="h2 section-title text-center">Nossos Serviços Criativos</h2>
+            <p class="section-text text-center">
+              Na Spalti, oferecemos soluções inovadoras que combinam tecnologia de ponta e design funcional para transformar negócios. Confira nossos principais serviços:
+            </p>
+            <ul class="grid-list">
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img src="./assets/images/service-1.png" width="140" height="140" loading="lazy"
+                      alt="Desenvolvimento de Softwares" class="img">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Desenvolvimento de Softwares</h3>
+                    <p class="card-text">
+                      Criamos softwares personalizados para atender às necessidades específicas de sua empresa, com foco em eficiência e inovação.
+                    </p>
+                    <a href="#" class="btn-link">
+                      <span class="span">Saiba Mais</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img src="./assets/images/service-2.png" width="140" height="140" loading="lazy" alt="Criação de Websites"
+                      class="img">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Criação de Websites</h3>
+                    <p class="card-text">
+                      Desenvolvemos websites modernos e responsivos que destacam sua presença online e atraem clientes.
+                    </p>
+                    <a href="#" class="btn-link">
+                      <span class="span">Saiba Mais</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img src="./assets/images/service-3.png" width="140" height="140" loading="lazy"
+                      alt="Soluções de Automação" class="img">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Soluções de Automação</h3>
+                    <p class="card-text">
+                      Implementamos sistemas de automação para otimizar processos e aumentar a produtividade do seu negócio.
+                    </p>
+                    <a href="#" class="btn-link">
+                      <span class="span">Saiba Mais</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="service-card has-after">
+                  <figure class="card-icon">
+                    <img src="./assets/images/service-4.png" width="140" height="140" loading="lazy" alt="Suporte Técnico"
+                      class="img">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Suporte Técnico</h3>
+                    <p class="card-text">
+                      Oferecemos suporte técnico contínuo para garantir que suas operações funcionem sem interrupções.
+                    </p>
+                    <a href="#" class="btn-link">
+                      <span class="span">Saiba Mais</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary">Comece Agora</a>
+          </div>
+        </section>
+
+        <section class="section features" id="projetos" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle text-center">-Nossos Projetos-</p>
+            <h2 class="h2 section-title text-center">Projetos Realizados</h2>
+            <p class="section-text text-center">
+              Conheça alguns dos projetos que refletem nosso compromisso com inovação e excelência.
+            </p>
+            <ul class="grid-list">
+              <li>
+                <div class="features-card" onclick="openModal(1)">
+                  <data class="card-number" value="01">01</data>
+                  <h3 class="h3 card-title">Plataforma de Gestão Empresarial</h3>
+                  <p class="card-text">
+                    Sistema personalizado para otimizar operações administrativas de pequenas e médias empresas.
+                  </p>
+                  <span class="button-text">Veja Aqui</span>
+                </div>
+              </li>
+              <li>
+                <div class="features-card" onclick="openModal(2)">
+                  <data class="card-number" value="02">02</data>
+                  <h3 class="h3 card-title">E-commerce com Sistema Integrado</h3>
+                  <p class="card-text">
+                    Loja virtual moderna com integração a sistemas de pagamento e logística para o seu negócio.
+                  </p>
+                  <span class="button-text">Veja Aqui</span>
+                </div>
+              </li>
+              <li>
+                <div class="features-card" onclick="openModal(3)">
+                  <data class="card-number" value="03">03</data>
+                  <h3 class="h3 card-title">Sistema de Automação Industrial</h3>
+                  <p class="card-text">
+                    Solução avançada para monitoramento e controle de processos industriais em tempo real.
+                  </p>
+                  <span class="button-text">Veja Aqui</span>
+                </div>
+              </li>
+              <li>
+                <div class="features-card" onclick="openModal(4)">
+                  <data class="card-number" value="04">04</data>
+                  <h3 class="h3 card-title">Website Institucional</h3>
+                  <p class="card-text">
+                    Design profissional e responsivo para destacar a presença online de nossos clientes.
+                  </p>
+                  <span class="button-text">Veja Aqui</span>
+                </div>
+              </li>
+              <li>
+                <div class="features-card" onclick="openModal(5)">
+                  <data class="card-number" value="05">05</data>
+                  <h3 class="h3 card-title">Aplicativo Mobile</h3>
+                  <p class="card-text">
+                    Desenvolvimento de apps intuitivos e de alto desempenho para plataformas iOS e Android.
+                  </p>
+                  <span class="button-text">Veja Aqui</span>
+                </div>
+              </li>
+              <li>
+                <div class="features-card" onclick="openModal(6)">
+                  <data class="card-number" value="06">06</data>
+                  <h3 class="h3 card-title">Dashboard de Dados</h3>
+                  <p class="card-text">
+                    Ferramenta interativa para visualização e análise de dados em tempo real.
+                  </p>
+                   <span class="button-text">Veja Aqui</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <!-- Modal -->
+        <div id="projectModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Projeto" class="modal-image" />
+            <p id="modalText" class="modal-text"></p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">Spalti</a>
+            <p class="footer-text">
+              Transformamos negócios com soluções tecnológicas de alta qualidade, inovação e resultados comprovados.
+            </p>
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Digite seu email" required class="email-field">
+              <button type="submit" class="form-btn">
+                <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Nossos Serviços</p>
+            </li>
+            <li>
+              <a href="contato.html" class="footer-link">Desenvolvimento de Sistemas</a>
+            </li>
+            <li>
+              <a href="contato.html" class="footer-link">Automação de Processos</a>
+            </li>
+            <li>
+              <a href="contato.html" class="footer-link">Consultoria Tecnológica</a>
+            </li>
+            <li>
+              <a href="contato.html" class="footer-link">Soluções Personalizadas</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Empresa</p>
+            </li>
+            <li>
+              <a href="equipe.html" class="footer-link">Sobre a Spalti</a>
+            </li>
+            <li>
+              <a href="equipe.html" class="footer-link">Nossa Equipe</a>
+            </li>
+            <li>
+              <a href="#projetos" class="footer-link">Projetos Realizados</a>
+            </li>
+            <li>
+              <a href="contato.html" class="footer-link">Contato</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Fale Conosco</p>
+            </li>
+            <li class="footer-item">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+              <address class="contact-link address">
+                Avenida Professora Izoraida Marques Peres, Sorocaba, SP, Brasil
+              </address>
+            </li>
+            <li class="footer-item">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+              <a href="tell: +551597747226" class="contact-link">+55 (15) 99774-7226</a>
+            </li>
+            <li class="footer-item">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+              <a href="mailto:spalticompany@gmail.com" class="contact-link">spalticompany@gmail.com</a>
+            </li>
+            <li class="footer-item">
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024 Spalti | Todos os Direitos Reservados
+          </p>
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="politica_privacidade.html" class="footer-bottom-link">Política de Privacidade</a>
+            </li>
+            <li>
+              <a href="termos_uso.html" class="footer-bottom-link">Termos de Uso</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>    
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/splash.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
